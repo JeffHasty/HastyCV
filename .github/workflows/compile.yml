@@ -1,0 +1,29 @@
+name: Compile CV
+
+on:
+  push:
+    branches: [main, master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: hastyCV.tex
+          working_directory: Hasty_CV
+
+      - name: Push PDF to build branch
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git checkout --orphan build
+          git rm -rf .
+          cp Hasty_CV/hastyCV.pdf .
+          git add hastyCV.pdf
+          git commit -m "Compiled CV $(date -u +%Y-%m-%d)"
+          git push origin build --force
