@@ -19,11 +19,12 @@ jobs:
 
       - name: Push PDF to build branch
         run: |
+          cp Hasty_CV/hastyCV.pdf /tmp/hastyCV.pdf
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git checkout --orphan build
           git rm -rf .
-          cp Hasty_CV/hastyCV.pdf .
+          cp /tmp/hastyCV.pdf .
           git add hastyCV.pdf
           git commit -m "Compiled CV $(date -u +%Y-%m-%d)"
           git push origin build --force
