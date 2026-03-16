@@ -1,0 +1,338 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+
+% personal data
+\name{Jeff}{Hasty}
+%\title{Professor, Department of Bioengineering, UC San Diego}                               % optional, remove / comment the line if not wanted
+%\address{9500 Gilman Drive}{La Jolla, CA 92093-0349}{USA}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+%\phone[mobile]{+1~(760)~429~4816}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{hasty@ucsd.edu}                               % optional, remove / comment the line if not wanted
+\homepage{biodynamics.ucsd.edu}                        % optional, remove / comment the line if not wanted
+%\social[linkedin]{john.doe}                        % optional, remove / comment the line if not wanted
+%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+%\social[github]{jdoe}                              % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.0pt]{hasty_happy_bw}                       % optional, remove / comment the line if 
+%\photo[64pt][0.0pt]{Jeff_Feb2021}   
+%not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+\usepackage{multibib}
+\newcites{book,misc}{{Books},{Others}}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+
+
+%\renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\vspace{-.5in}
+\section{Research Focus: Systems and Synthetic Biology}
+\begin{tabular}{lll} 
+\href{http://qbio.ucsd.edu}{Development of a theoretical understanding of living systems}\\
+\href{http://gencirq.com}{Transitioning synthetic biology towards diagnostics and therapeutics for cancer}\\
+\href{https://www.qbisci.com/fiscalini-dairy}{Systems engineering of water treatment for the generation of feedstock, energy and clean water}\\
+\href{https://www.qbisci.com/sensors/}{Development of biosensors for continuous monitoring of industrial processes}\\
+\href{https://qbio.ucsd.edu}{Transforming education for the next generation of biologists}\\
+\href{http://biocircuits.sdsc.edu/outreach/}{Integration of new technologies into K6 science education}\\
+\end{tabular}\\
+
+%\section{Broad Scientific Interests}
+%\textcolor{black}{\begin{tabular}{lll}  
+%\href{http://qbio.ucsd.edu}{Development of a theoretical understanding of living systems}\\
+%\href{http://gencirq.com}{Transitioning synthetic biology towards diagnostics and therapeutics for cancer}\\
+%\href{https://www.qbisci.com/fiscalini-dairy}{Systems engineering of water treatment for the generation of feedstock, energy and clean water}\\
+%\href{https://www.qbisci.com/sensors/}{Development of biosensors for continuous monitoring of industrial processes}\\
+%\href{https://qbio.ucsd.edu}{Transforming education for the next generation of biologists}\\
+%\href{http://biocircuits.sdsc.edu/outreach/}{Integration of new technologies into K6 science education}\\
+%\end{tabular}\\}
+
+
+
+\section{Education}
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}  % arguments 3 to 6 can be left empty
+\cventry{1992--1997}{Ph.D. Physics}{Georgia Institute of Technology}{Research Area: Statistical Physics}{Advisor: Kurt Wiesenfeld}{}  % arguments 3 to 6 can be left empty
+%\cventry{1988--1991}{M.S. Physics}{San Francisco State University}{Atlanta}{GA}{Advisor: Kurt Wiesenfeld}
+
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+
+%\section{Master thesis}
+%\cvitem{title}{\emph{Title}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
+
+\section{Academic Appointments}
+ \cventry{2010--present}{Professor}{Department of Bioengineering}{UC San Diego}{}{~}
+\vspace{-.2in}\cventry{2010--present}{Professor}{Molecular Biology Section}{UC San Diego}{}{~}
+\vspace{-.2in} \cventry{2009--present}{Director}{Synthetic Biology Institute}{UC San Diego}{}{~}
+\vspace{-.2in}\cventry{2009--2010}{Associate Professor}{Molecular Biology Section}{UC San Diego}{}{~}
+\vspace{-.2in}\cventry{2006--2010}{Associate Professor}{Department of Bioengineering}{UC San Diego}{}{~}
+\vspace{-.2in}\cventry{2002--2006}{Assistant Professor}{Department of Bioengineering}{UC San Diego}{}{~}
+\vspace{-.2in}\cventry{2001--2002}{Research Assistant Professor}{Department of Bioengineering}{Boston University}{}{~}
+\vspace{-.2in}\cventry{1998--2001}{Postdoc with Jim Collins}{Department of Bioengineering}{Boston University}{}{~}
+
+
+%\section{Private Sector Appointments}
+%~~\\
+
+ %\vspace{-.2in}\cventry{2016--present}{Founder and Scientific Advisor}{GenCirq, Inc}{Sorrento Valley}{CA}{~}
+ %\cventry{2010--present}{Founder and Scientific Advisor}{Quantitative BioSciences}{Sorrento Valley}{CA}{~}
+
+
+
+
+
+
+%
+%Detailed achievements:%
+%\begin{itemize}%
+%\item Achievement 1;
+%\item Achievement 2, with sub-achievements:
+%  \begin{itemize}%
+%  \item Sub-achievement (a);
+%  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+%    \begin{itemize}
+%    \item Sub-sub-achievement i;
+%    \item Sub-sub-achievement ii;
+%    \item Sub-sub-achievement iii;
+%    \end{itemize}
+%  \item Sub-achievement (c);
+%  \end{itemize}
+%\item Achievement 3.
+%\end{itemize}
+
+%\section{Current and Recent External Funding}
+%\input{funding.tex}
+
+
+%\section{Languages}
+%\cvitemwithcomment{Language 1}{Skill level}{Comment}
+%\cvitemwithcomment{Language 2}{Skill level}{Comment}
+%\cvitemwithcomment{Language 3}{Skill level}{Comment}
+%
+%\section{Computer skills}
+%\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+%\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+%\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+%
+%\section{Interests}
+%\cvitem{hobby 1}{Description}
+%\cvitem{hobby 2}{Description}
+%\cvitem{hobby 3}{Description}
+%
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+%
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+%
+%\section{References}
+%\begin{cvcolumns}
+%  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\newpage
+\section{Publications} %Run BibTeX!
+\vspace{-.2in}
+\renewcommand{\refname}{}
+\nocite{*}
+
+%All Pubs:
+%\bibliographystyle{plainrevyr}
+%\bibliography{publications}  
+
+%Biggest Pubs:
+%\bibliographystyle{apalike}
+%\bibliography{MajorPubs}   
+
+%Latest Pubs:
+\bibliographystyle{plainrevyr}
+\bibliography{publications}    
+ 
+% 'publications' is the name of a BibTeX file
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%\newpage 
+
+\section{Ph.D. Students~(Defense Date; Current Position)}
+\input{students.tex}
+
+\section{Honors and Awards}
+\begin{itemize}
+
+\item Paul A. Libby Endowed Chair in the Jacobs School of Engineering (2024). 
+
+\item Finalist, Howard Hughes Medical Institute Investigator Program (2015). 
+
+\item Fellow, American Institute for Medical and Biological Engineering (2014). 
+
+\item Teacher of the Year, UCSD Department of Bioengineering (2010).
+
+\item Invited Speaker -- Nobel Symposium on Systems Biology~(2009).
+
+\item Alfred P. Sloan Research Fellow~(2003--05).
+
+\item NSF Career Award (2003--08).
+
+\end{itemize}
+
+
+%\section{Invited Talks, Lecture, Seminars}
+%\begin{enumerate}
+%\input{all_talks.tex}
+%\end{enumerate}
+
+\section{Synergistic Activities}
+\begin{itemize}
+\item Founder and Lead Organizer -- Annual Winter Q-BIO Meeting (2012-present). 
+\item Associate Editor, {\em ACS Synthetic Biology} (2011-2017)
+\item Organizer (with Ron Weiss), Synthetic Biology Workshop.  Mathematical Biosciences Institute, Ohio State University, Columbus, OH (January, 2010).  
+\item Editorial Board, {\em Biophysical Journal} (2010-2012). 
+\item Editorial Board, {\em Systems and Synthetic Biology} (2006-2012).
+\item Editorial Board, {\em Chaos} (2007-2015).
+\item Organizer - Minisymposium: Dynamics in Gene Expression, Society for Industrial
+and Applied Mathematics (SIAM) 2nd Life Science Conference, Raleigh,
+NC (2006).
+\item Workshop Organizer, Columbus, OH. Genomics/proteomics/bioinformatics
+workshop at the NSF Mathematical Biosciences Institute (11/08/2004).
+\item Computational Bioengineering Track Organizer~(9 sessions), Biomedical Engineering Society (BMES) annual meeting, Philadelphia, PA (10/14/2004).
+\item Organizer.  Minisymposium on dynamics of gene regulation.
+Society for Industrial and Applied Mathematics (SIAM) 2nd Life
+Science Conference, Portland, OR (7/11/04).
+\item Discussion Leader: Modeling Transcriptional Control in Gene Regulatory Networks,
+Gordon Research Conference: Theoretical Biology \& Biomathematics
+(6/9/04).
+\item Editorial Board, {\em IEE Systems Biology} (2004-2006).
+\item Scientific Advisory Committee, CIIT Centers for Health
+Research, Research Triangle Park, NC (2004-2006).
+\item Chair -- Session: Noise in genetic networks. American Physical
+Society March Meeting, Austin, TX (2003).
+\item NSF Delegation Member. Served as one of three junior scientists
+on a US team formed to participate in the Advanced Studies
+Institute in Canberra Australia (2002).
+\item Organizer - Minisymposium: Gene regulatory networks, Society for Industrial
+and Applied Mathematics (SIAM) 1st Life Science Conference,
+Boston, MA (2002).
+\item Organizer - Minisymposium: Dynamics of gene networks, Society for Industrial and
+Applied Mathematics (SIAM) 6th Conference on Applications of
+Dynamical Systems, Snowbird, UT (2001).
+\item Chair - Session: Designer gene networks: Towards fundamental cellular control,
+Society for Industrial and Applied Mathematics (SIAM) 6th
+Conference on Applications of Dynamical Systems, Snowbird, UT
+(2001).
+\end{itemize}
+
+
+\section{University Service}
+\begin{itemize}
+\item Undergraduate Studies Committee (Dept. of Bioengineering) 2002-03.
+\item Jacobs School Task Force for Academic Culture Excellence (School of Engineering) 2003-2010.
+\item Graduate Studies Committee (Dept of Bioengineering) 2003-2010.
+\item Graduate Council (university-wide) 2008-2010.
+\item Executive Committee on qBIO Development  2012-present.
+\item Creation of qBIO Program (see http://qbio.ucsd.edu) 2013-15.
+\item Division of Biological Sciences Diversity Committee, 2014-17.
+\item Grad Admissions Committee service 2016-17.
+\item Director of Synthetic Biology Institute, 2009-present.
+\item Alternate, UCSD Academic Senate, 2023-24. 
+\end{itemize}
+%
+%\section{Community Outreach}
+%\begin{itemize}
+%
+%\item Director and Teacher, \href{http://biodynamics.ucsd.edu/elementary/Ocean_Knoll/Welcome.html}{Adopt a School Science Program}.  Development and teaching of an elementary school science program (2010-present).   
+%
+%\item Research Science Mentor, Leon County Public Schools.   Science
+%teacher and advisor for gifted middle school students (1997-98).
+%
+%\item Science Teacher, Jefferson School, San Francisco Unified
+%School District. Developed and taught an elementary science
+%program for grades 2-4 (1989-91).
+%
+%\end{itemize}\
+
+
+
+
+\end{document}
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+\date{January 01, 1984}
+\opening{Dear Sir or Madam,}
+\closing{Yours faithfully,}
+\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+
+Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+
+Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+
+Albert Einstein discovered that $e=mc^2$ in 1905.
+
+\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+
+\makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
